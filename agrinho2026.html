@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Navegação e Imagens</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: rgb(182, 182, 182);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .imagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .imagens img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        #home { background-color: #8b8b8b; }
+        #sobre { background-color: #335c76; }
+        #galeria { background-color: #95a5a6; }
+        #contato { background-color: #7f8c8d; color: white; }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="container">
+        <h1>Bem-vindo</h1>
+        <p>**Semeando Saberes, Cultivando o Futuro: A Força da Educação no Campo, agrinho 2026**</p>
+
+        <div class="imagens">
+            <img src="imagem agrinho 2026 n1.jpg" alt="imagem 1">
+            <img src="imagem agrinho 2026 n2.1.jpg" alt="imagem 2">
+            <img src="imagem agrinho 2026 n3.1.44.jpg" alt="imagem 3">
+        </div>
+    </div>
+</section>
+
+<section id="sobre">
+    <div class="container">
+        <h1>Sobre</h1>
+        <p>A escola é muito mais do que um espaço com salas de aula e quadros-negros; ela é o lugar onde o nosso futuro começa a ser desenhado. É nesse ambiente que descobrimos o mundo além do nosso cotidiano, aprendemos a questionar, a partilhar ideias e a conviver com a diversidade.
+
+            Mais do que adquirir conhecimento científico e histórico, na escola desenvolvemos laços de amizade, exercitamos a empatia e compreendemos o valor da cidadania. Ela é o ponto de encontro entre a curiosidade do presente e as infinitas possibilidades do amanhã, funcionando como uma verdadeira base para a formação de cidadãos conscientes e preparados para transformar a sociedade.</p>
+
+        <div class="imagens">
+            <img src="colegio.jpg" alt="Imagem 4">
+            <img src="pintuh.jpeg" alt="Imagem 5">
+        </div>
+    </div>
+</section>
+
+<section id="galeria">
+    <div class="container">
+        <h1>Galeria</h1>
+
+        <div class="imagens">
+            <img src="download (2).jpeg" alt="Imagem 6">
+            <img src="download (1).jpeg" alt="Imagem 7">
+            <img src="download.jpeg" alt="Imagem 8">
+            <img src="https://picsum.photos/400/300?9" alt="Imagem 9">
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="container">
+        <h1>Contato</h1>
+        <p>Email: ariel.conte@escola.com</p>
+        <p>Telefone: (46) 99128-7810</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Página Exemplo</p>
+</footer>
+
+</body>
+</html>
